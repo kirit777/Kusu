@@ -15,6 +15,9 @@
 		7A8C488B291F487B005E57BD /* CustomTabbarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8C4889291F487B005E57BD /* CustomTabbarVC.swift */; };
 		7A8C488C291F487B005E57BD /* CustomTabbarVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A8C488A291F487B005E57BD /* CustomTabbarVC.xib */; };
 		7A8C488F291F4923005E57BD /* KusuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8C488E291F4923005E57BD /* KusuView.swift */; };
+		7A8D2407291FC6D900483B6C /* CommonClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8D2406291FC6D900483B6C /* CommonClass.swift */; };
+		7A8D240C291FC7A100483B6C /* homeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8D240A291FC7A100483B6C /* homeVC.swift */; };
+		7A8D240D291FC7A100483B6C /* homeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A8D240B291FC7A100483B6C /* homeVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		7A8C4889291F487B005E57BD /* CustomTabbarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabbarVC.swift; sourceTree = "<group>"; };
 		7A8C488A291F487B005E57BD /* CustomTabbarVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTabbarVC.xib; sourceTree = "<group>"; };
 		7A8C488E291F4923005E57BD /* KusuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KusuView.swift; sourceTree = "<group>"; };
+		7A8D2406291FC6D900483B6C /* CommonClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonClass.swift; sourceTree = "<group>"; };
+		7A8D240A291FC7A100483B6C /* homeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeVC.swift; sourceTree = "<group>"; };
+		7A8D240B291FC7A100483B6C /* homeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = homeVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +89,8 @@
 		7A8C4887291F4829005E57BD /* HomeFlow */ = {
 			isa = PBXGroup;
 			children = (
+				7A8D2409291FC78000483B6C /* Account */,
+				7A8D2408291FC77700483B6C /* Home */,
 				7A8C4888291F4838005E57BD /* CustomTabbar */,
 			);
 			path = HomeFlow;
@@ -101,8 +109,25 @@
 			isa = PBXGroup;
 			children = (
 				7A8C488E291F4923005E57BD /* KusuView.swift */,
+				7A8D2406291FC6D900483B6C /* CommonClass.swift */,
 			);
 			path = CustomView;
+			sourceTree = "<group>";
+		};
+		7A8D2408291FC77700483B6C /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				7A8D240A291FC7A100483B6C /* homeVC.swift */,
+				7A8D240B291FC7A100483B6C /* homeVC.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		7A8D2409291FC78000483B6C /* Account */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Account;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,6 +191,7 @@
 				7A6D5F47291DF812006BF259 /* LaunchScreen.storyboard in Resources */,
 				7A6D5F44291DF812006BF259 /* Assets.xcassets in Resources */,
 				7A6D5F42291DF811006BF259 /* Main.storyboard in Resources */,
+				7A8D240D291FC7A100483B6C /* homeVC.xib in Resources */,
 				7A8C488C291F487B005E57BD /* CustomTabbarVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -177,6 +203,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A8D2407291FC6D900483B6C /* CommonClass.swift in Sources */,
+				7A8D240C291FC7A100483B6C /* homeVC.swift in Sources */,
 				7A8C488F291F4923005E57BD /* KusuView.swift in Sources */,
 				7A6D5F3F291DF811006BF259 /* ViewController.swift in Sources */,
 				7A6D5F3B291DF811006BF259 /* AppDelegate.swift in Sources */,
