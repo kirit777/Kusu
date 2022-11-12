@@ -8,22 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		7A6D5F3B291DF811006BF259 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6D5F3A291DF811006BF259 /* AppDelegate.swift */; };
-		7A6D5F3D291DF811006BF259 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6D5F3C291DF811006BF259 /* SceneDelegate.swift */; };
 		7A6D5F3F291DF811006BF259 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6D5F3E291DF811006BF259 /* ViewController.swift */; };
 		7A6D5F42291DF811006BF259 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A6D5F40291DF811006BF259 /* Main.storyboard */; };
 		7A6D5F44291DF812006BF259 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A6D5F43291DF812006BF259 /* Assets.xcassets */; };
 		7A6D5F47291DF812006BF259 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A6D5F45291DF812006BF259 /* LaunchScreen.storyboard */; };
+		7A8C488B291F487B005E57BD /* CustomTabbarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8C4889291F487B005E57BD /* CustomTabbarVC.swift */; };
+		7A8C488C291F487B005E57BD /* CustomTabbarVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A8C488A291F487B005E57BD /* CustomTabbarVC.xib */; };
+		7A8C488F291F4923005E57BD /* KusuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8C488E291F4923005E57BD /* KusuView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7A6D5F37291DF811006BF259 /* Kusu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kusu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A6D5F3A291DF811006BF259 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7A6D5F3C291DF811006BF259 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		7A6D5F3E291DF811006BF259 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7A6D5F41291DF811006BF259 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7A6D5F43291DF812006BF259 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7A6D5F46291DF812006BF259 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7A6D5F48291DF812006BF259 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A8C4889291F487B005E57BD /* CustomTabbarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabbarVC.swift; sourceTree = "<group>"; };
+		7A8C488A291F487B005E57BD /* CustomTabbarVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTabbarVC.xib; sourceTree = "<group>"; };
+		7A8C488E291F4923005E57BD /* KusuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KusuView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +60,10 @@
 		7A6D5F39291DF811006BF259 /* Kusu */ = {
 			isa = PBXGroup;
 			children = (
+				7A8C488D291F48B5005E57BD /* CustomView */,
+				7A8C4887291F4829005E57BD /* HomeFlow */,
+				7A8C4886291F4820005E57BD /* LoginFlow */,
 				7A6D5F3A291DF811006BF259 /* AppDelegate.swift */,
-				7A6D5F3C291DF811006BF259 /* SceneDelegate.swift */,
 				7A6D5F3E291DF811006BF259 /* ViewController.swift */,
 				7A6D5F40291DF811006BF259 /* Main.storyboard */,
 				7A6D5F43291DF812006BF259 /* Assets.xcassets */,
@@ -65,6 +71,38 @@
 				7A6D5F48291DF812006BF259 /* Info.plist */,
 			);
 			path = Kusu;
+			sourceTree = "<group>";
+		};
+		7A8C4886291F4820005E57BD /* LoginFlow */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LoginFlow;
+			sourceTree = "<group>";
+		};
+		7A8C4887291F4829005E57BD /* HomeFlow */ = {
+			isa = PBXGroup;
+			children = (
+				7A8C4888291F4838005E57BD /* CustomTabbar */,
+			);
+			path = HomeFlow;
+			sourceTree = "<group>";
+		};
+		7A8C4888291F4838005E57BD /* CustomTabbar */ = {
+			isa = PBXGroup;
+			children = (
+				7A8C4889291F487B005E57BD /* CustomTabbarVC.swift */,
+				7A8C488A291F487B005E57BD /* CustomTabbarVC.xib */,
+			);
+			path = CustomTabbar;
+			sourceTree = "<group>";
+		};
+		7A8C488D291F48B5005E57BD /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				7A8C488E291F4923005E57BD /* KusuView.swift */,
+			);
+			path = CustomView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +166,7 @@
 				7A6D5F47291DF812006BF259 /* LaunchScreen.storyboard in Resources */,
 				7A6D5F44291DF812006BF259 /* Assets.xcassets in Resources */,
 				7A6D5F42291DF811006BF259 /* Main.storyboard in Resources */,
+				7A8C488C291F487B005E57BD /* CustomTabbarVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,9 +177,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A8C488F291F4923005E57BD /* KusuView.swift in Sources */,
 				7A6D5F3F291DF811006BF259 /* ViewController.swift in Sources */,
 				7A6D5F3B291DF811006BF259 /* AppDelegate.swift in Sources */,
-				7A6D5F3D291DF811006BF259 /* SceneDelegate.swift in Sources */,
+				7A8C488B291F487B005E57BD /* CustomTabbarVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
