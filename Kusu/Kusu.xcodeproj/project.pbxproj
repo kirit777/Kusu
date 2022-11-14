@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A30CBA8292202B400F0B99D /* CustomTabBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A30CBA6292202B400F0B99D /* CustomTabBar.xib */; };
+		7A30CBAA2922153D00F0B99D /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A30CBA92922153D00F0B99D /* CustomTabBar.swift */; };
 		7A6D5F3B291DF811006BF259 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6D5F3A291DF811006BF259 /* AppDelegate.swift */; };
 		7A6D5F3F291DF811006BF259 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6D5F3E291DF811006BF259 /* ViewController.swift */; };
 		7A6D5F42291DF811006BF259 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A6D5F40291DF811006BF259 /* Main.storyboard */; };
@@ -21,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7A30CBA6292202B400F0B99D /* CustomTabBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTabBar.xib; sourceTree = "<group>"; };
+		7A30CBA92922153D00F0B99D /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
 		7A6D5F37291DF811006BF259 /* Kusu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kusu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A6D5F3A291DF811006BF259 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7A6D5F3E291DF811006BF259 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -101,6 +105,8 @@
 			children = (
 				7A8C4889291F487B005E57BD /* CustomTabbarVC.swift */,
 				7A8C488A291F487B005E57BD /* CustomTabbarVC.xib */,
+				7A30CBA6292202B400F0B99D /* CustomTabBar.xib */,
+				7A30CBA92922153D00F0B99D /* CustomTabBar.swift */,
 			);
 			path = CustomTabbar;
 			sourceTree = "<group>";
@@ -188,6 +194,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A30CBA8292202B400F0B99D /* CustomTabBar.xib in Resources */,
 				7A6D5F47291DF812006BF259 /* LaunchScreen.storyboard in Resources */,
 				7A6D5F44291DF812006BF259 /* Assets.xcassets in Resources */,
 				7A6D5F42291DF811006BF259 /* Main.storyboard in Resources */,
@@ -205,6 +212,7 @@
 			files = (
 				7A8D2407291FC6D900483B6C /* CommonClass.swift in Sources */,
 				7A8D240C291FC7A100483B6C /* homeVC.swift in Sources */,
+				7A30CBAA2922153D00F0B99D /* CustomTabBar.swift in Sources */,
 				7A8C488F291F4923005E57BD /* KusuView.swift in Sources */,
 				7A6D5F3F291DF811006BF259 /* ViewController.swift in Sources */,
 				7A6D5F3B291DF811006BF259 /* AppDelegate.swift in Sources */,
