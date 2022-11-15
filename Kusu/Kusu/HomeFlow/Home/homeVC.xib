@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="homeVC" customModule="Kusu" customModuleProvider="target">
             <connections>
+                <outlet property="cvPosts" destination="v3m-TF-7if" id="fMs-ub-Dvy"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -17,12 +18,43 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="v3m-TF-7if">
+                    <rect key="frame" x="0.0" y="100" width="393" height="752"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="R5C-qM-5FG">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="100"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="4zH-c2-aC4"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="JXY-Zd-iF5">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemMintColor"/>
-            <point key="canvasLocation" x="132" y="-11"/>
+            <constraints>
+                <constraint firstItem="R5C-qM-5FG" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="84g-vh-QHC"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="v3m-TF-7if" secondAttribute="bottom" id="Ilf-CP-y7y"/>
+                <constraint firstItem="R5C-qM-5FG" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Lcu-Ie-Hkx"/>
+                <constraint firstItem="v3m-TF-7if" firstAttribute="top" secondItem="R5C-qM-5FG" secondAttribute="bottom" id="PCM-6T-i0o"/>
+                <constraint firstItem="v3m-TF-7if" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="TfV-Ut-kOr"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="R5C-qM-5FG" secondAttribute="trailing" id="ZtD-kN-r9c"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="v3m-TF-7if" secondAttribute="trailing" id="zp0-r4-TIT"/>
+            </constraints>
+            <point key="canvasLocation" x="130.53435114503816" y="-11.267605633802818"/>
         </view>
     </objects>
     <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemMintColor">
             <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
