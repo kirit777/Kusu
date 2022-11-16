@@ -9,6 +9,10 @@ import UIKit
 
 class PostTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var imgPost: UIImageView!
+    @IBOutlet weak var txtDesc: UITextView!
+    @IBOutlet weak var lblUserName: UILabel!
+    @IBOutlet weak var imgUserImage: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -24,9 +28,20 @@ class PostTableViewCell: UITableViewCell {
     func setCellData(dict:NSMutableDictionary){
         
         if let strImage = dict["att_thumb"] as? String{
-            
+            self.imgPost.setImage(strUrl: strImage, strDefault: "", cornerRadius: 0)
         }
         
+        if let strDesc = dict["description"] as? String{
+            self.txtDesc.text = strDesc
+        }
+        
+        if let strUserName = dict["name"] as? String{
+            self.lblUserName.text = strUserName
+        }
+        
+        if let strImage = dict["photo"] as? String{
+            self.imgUserImage.setImage(strUrl: strImage, strDefault: "", cornerRadius: 0)
+        }
     }
     
 }

@@ -9,6 +9,7 @@ import UIKit
 
 class homeVC: UIViewController {
     
+    @IBOutlet weak var cvStory: UICollectionView!
     @IBOutlet weak var cvPosts: UITableView!
     var arrList : NSMutableArray!
     var isLoadMore:Bool!
@@ -31,6 +32,10 @@ class homeVC: UIViewController {
         self.cvPosts.delegate = self
         self.cvPosts.dataSource = self
         
+        
+        self.cvStory.delegate = self
+        self.cvStory.dataSource = self
+        
         refreshControl = UIRefreshControl()
         self.cvPosts.refreshControl = refreshControl
         refreshControl.addTarget(self, action: #selector(refreshData), for: .valueChanged)
@@ -44,6 +49,7 @@ class homeVC: UIViewController {
     
     func setUserSearchView() {
         self.cvPosts.register(UINib(nibName: "PostTableViewCell", bundle: nil), forCellReuseIdentifier: "PostTableViewCell")
+        cvStory.register(UINib(nibName: "StoryCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "StoryCollectionViewCell")
         pageCount = 1
         self.getPostList(page: pageCount)
     }
@@ -69,6 +75,7 @@ class homeVC: UIViewController {
 
     func removeLoading() {
         cvPosts.reloadData()
+        cvStory.reloadData()
         if refreshControl.isRefreshing {
             refreshControl.endRefreshing()
         }
@@ -121,7 +128,11 @@ extension homeVC : UITableViewDelegate , UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "PostTableViewCell", for: indexPath) as? PostTableViewCell
-        
+        if arrList.count > 0 {
+            if let dict = arrList.object(at: indexPath.row) as? NSMutableDictionary{
+                cell!.setCellData(dict:dict)
+            }
+        }
         return cell!
     }
 }
@@ -165,4 +176,92 @@ extension homeVC : AlmofireUtilityDelegate {
         self.removeLoading()
         print(error)
     }
+}
+
+extension homeVC : UICollectionViewDelegate , UICollectionViewDataSource , UICollectionViewDelegateFlowLayout{
+    
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 1
+    }
+    
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        print(arrList.count)
+        return arrList.count
+    }
+    func collectionView(_ collectionView: UICollectionView,
+                        layout collectionViewLayout: UICollectionViewLayout,
+                        minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        
+        return 10.0
+        
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout
+        collectionViewLayout: UICollectionViewLayout,
+                        minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        
+        return 10.0
+        
+    }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        
+        let size = 100
+        let cellSize = CGSize(width: size, height: size)
+        return cellSize
+        
+    }
+    
+//    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+//        // if collectionView == collectionListFull {
+//        switch kind {
+//
+//        case UICollectionView.elementKindSectionFooter:
+//
+//            let footerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "CollectionViewLoading", for: indexPath) as! CollectionViewLoading
+//            if isLoading {
+//                footerView.setLoadingWithImage(title: String.str_Loading, subtitle: "", img: "")
+//            } else {
+//                print(self.arrList.count)
+//                if self.arrList.count == 0 {
+//                    footerView.setLoadingWithImage(title: String.str_No_video, subtitle: "", img: "empty")
+//                }
+//            }
+//            return footerView
+//
+//        default:
+//            print("Unexpected element kind")
+//        }
+//        return UICollectionReusableView()
+//    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForFooterInSection section: Int) -> CGSize {
+        if arrList.count == 0 {
+            return CGSize(width: collectionView.bounds.width, height: collectionView.bounds.height)
+        }
+        return CGSize.zero
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "StoryCollectionViewCell", for: indexPath) as! StoryCollectionViewCell
+        //cell.delagatePostList = self
+        if arrList.count > indexPath.row {
+            if let dict = arrList.object(at: indexPath.row) as? NSDictionary {
+                cell.setCellData(dict: dict.mutableCopy() as! NSMutableDictionary)
+            }
+        }
+        return cell
+    }
+//    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+//        print("array count : \(arrList.count)")
+//        if arrList.count > indexPath.row {
+//            let previewVC = MainStoryboard.storyBoard.instantiateViewController(withIdentifier: "PreviewViewController") as? PreviewViewController
+//            previewVC?.arrAllStory = NSMutableArray(array: self.arrList)
+//            previewVC?.CurrentIndex = indexPath.row
+//            previewVC?.pageCount = self.pageCount
+//            let nav = UBNavigationController(rootViewController: previewVC!)
+//            nav.modalPresentationStyle = .fullScreen
+//            self.present(nav, animated: true, completion: nil) // navigationController?.
+//        }
+//    }
 }

@@ -7,6 +7,11 @@
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="PlayfairDisplay-SemiBold.ttf">
+            <string>PlayfairDisplay-SemiBold</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -20,31 +25,31 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0yN-xM-XHO" customClass="KusuView" customModule="Kusu" customModuleProvider="target">
                         <rect key="frame" x="10" y="10" width="183" height="176"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SU7-z7-1k7" customClass="KusuView" customModule="Kusu" customModuleProvider="target">
-                                <rect key="frame" x="21.666666666666671" y="0.0" width="140" height="140"/>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SU7-z7-1k7" customClass="KusuView" customModule="Kusu" customModuleProvider="target">
+                                <rect key="frame" x="66.666666666666671" y="0.0" width="50" height="50"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KiM-dZ-4hF">
-                                        <rect key="frame" x="0.0" y="0.0" width="140" height="140"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KiM-dZ-4hF">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="140" id="BUk-Bi-vx5"/>
+                                    <constraint firstAttribute="height" constant="50" id="BUk-Bi-vx5"/>
                                     <constraint firstAttribute="trailing" secondItem="KiM-dZ-4hF" secondAttribute="trailing" id="EvI-Sr-pfD"/>
                                     <constraint firstAttribute="bottom" secondItem="KiM-dZ-4hF" secondAttribute="bottom" id="NIw-E3-3eT"/>
                                     <constraint firstItem="KiM-dZ-4hF" firstAttribute="leading" secondItem="SU7-z7-1k7" secondAttribute="leading" id="cPH-ON-1nY"/>
                                     <constraint firstItem="KiM-dZ-4hF" firstAttribute="top" secondItem="SU7-z7-1k7" secondAttribute="top" id="eYu-99-rqC"/>
-                                    <constraint firstAttribute="width" constant="140" id="lxx-i8-REO"/>
+                                    <constraint firstAttribute="width" constant="50" id="lxx-i8-REO"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="70"/>
+                                        <real key="value" value="25"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VLD-hz-VRG">
-                                <rect key="frame" x="0.0" y="147" width="183" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="0.0" y="57" width="183" height="16"/>
+                                <fontDescription key="fontDescription" name="PlayfairDisplay-SemiBold" family="Playfair Display" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>

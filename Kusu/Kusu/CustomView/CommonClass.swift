@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 struct MainStoryboard {
     static let storyBoard = UIStoryboard(name: "Main", bundle: nil)
@@ -91,3 +92,90 @@ func GetHeaderWithAuthor() -> NSDictionary {
     
     return dict
 }
+
+
+//Image Extention
+
+extension UIImageView {
+    func setImage(strUrl :String , strDefault :String , cornerRadius:CGFloat) {
+        var placeImg :UIImage? = nil
+        if strDefault.count > 0 {
+            placeImg = UIImage(named: strDefault)!
+        }
+        let url = URL(string: strUrl)
+        let processor = DownsamplingImageProcessor(size: self.bounds.size)
+            |> RoundCornerImageProcessor(cornerRadius: cornerRadius)
+        self.kf.indicatorType = .activity
+        self.kf.setImage(
+            with: url,
+            placeholder: placeImg /*UIImage(named: strDefault)*/,
+            options: [
+                .processor(processor),
+                .scaleFactor(UIScreen.main.scale),
+                .transition(.fade(1)),
+                .cacheOriginalImage
+            ])
+        {
+            result in
+            switch result {
+            case .success( _): break
+                //printLog(data: "Task done for: \(value.source.url?.absoluteString ?? "")")
+                
+            case .failure( _):
+                //printLog(data: "Job failed: \(error.localizedDescription)")
+                if strDefault.count > 0 {
+                    self.image = UIImage(named: strDefault)
+                }
+            }
+        }
+    }
+}
+
+
+extension UIImage {
+    func getImageByRatio(image: UIImage , imageSize:CGSize) -> UIImage {
+        
+        var updatedWidth:CGFloat!
+        var updatedHeight:CGFloat!
+        
+        if imageSize.width > imageSize.height {
+            
+            updatedWidth = image.size.width
+            updatedHeight = (imageSize.height * image.size.width ) / imageSize.width
+            
+        }else{
+            let width = (imageSize.width * image.size.height) / imageSize.height
+            let height = image.size.height
+            
+            if width > image.size.width {
+                
+                updatedWidth =  image.size.width
+                updatedHeight = imageSize.height * image.size.width / imageSize.width
+            }else{
+                updatedWidth = width
+                updatedHeight = height
+            }
+        }
+        var x: CGFloat = 0.0
+        var y: CGFloat = 0.0
+        
+        if image.size.width > updatedWidth {
+            x = ((image.size.width - updatedWidth) / 2.0 ) * UIScreen.main.scale
+        }
+        if image.size.height > updatedHeight {
+            y = ((image.size.height - updatedHeight) / 2.0 ) * UIScreen.main.scale
+        }
+        
+        let cropSquare =  CGRect(x: x, y: y, width: updatedWidth * UIScreen.main.scale , height: updatedHeight * UIScreen.main.scale)  // CGRectMake(x, y, edge, edge)
+        
+        print(cropSquare)
+        print(image.cgImage)
+        
+        let imageRef = image.cgImage!.cropping(to: cropSquare);
+        let finalImg = UIImage(cgImage: imageRef!, scale: UIScreen.main.scale, orientation: image.imageOrientation)
+        return finalImg
+    }
+}
+
+
+

@@ -17,12 +17,13 @@ class StoryCollectionViewCell: UICollectionViewCell {
     }
 
     func setCellData(dict:NSMutableDictionary){
-        if let strTitle = dict["title"] as? String{
-            lblName.text = strTitle
+        if let strImage = dict["att_thumb"] as? String{
+            self.imgStory.setImage(strUrl: strImage, strDefault: "", cornerRadius: 0)
         }
         
-        if let strImage = dict["image"] as? String{
-            ///
+        
+        if let strUserName = dict["name"] as? String{
+            self.lblName.text = strUserName
         }
     }
     

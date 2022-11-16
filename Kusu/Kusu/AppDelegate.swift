@@ -44,10 +44,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CAAnimationDelegate,Custo
         let homeVC = homeVC.init(nibName: "homeVC", bundle: nil)
         let navHome = UINavigationController(rootViewController: homeVC)
         
+        let searchVC = SearchHomeVC.init(nibName: "SearchHomeVC", bundle: nil)
+        let navSearch = UINavigationController(rootViewController: searchVC)
+        
+        
+        let createPostVC = CreatePostVC.init(nibName: "CreatePostVC", bundle: nil)
+        let navCreatePost = UINavigationController(rootViewController: createPostVC)
+        
+        let notificationVC = NotificationVC.init(nibName: "NotificationVC", bundle: nil)
+        let navNotification = UINavigationController(rootViewController: notificationVC)
+        
+        let accountVC = AccountVC.init(nibName: "AccountVC", bundle: nil)
+        let navAccount = UINavigationController(rootViewController: accountVC)
+        
         
         tabBarController = CustomTabbarVC()
        // customTabBar = CustomTabBar.instanceFromNib() as? CustomTabBar
-        let myviewControllers = [navHome] as? [UINavigationController]
+        let myviewControllers = [navHome , navSearch , navCreatePost , navNotification , navAccount] as? [UINavigationController]
         tabBarController?.setViewControllers(myviewControllers, animated: true)
         setSelectedTabIndex(index: 0)
         if (customTabBar != nil){

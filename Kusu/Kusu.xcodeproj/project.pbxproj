@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -46,9 +46,33 @@
 		7ACDAF9B2923428600B67001 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACDAF992923428600B67001 /* PostTableViewCell.swift */; };
 		7ACDAF9C2923428600B67001 /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7ACDAF9A2923428600B67001 /* PostTableViewCell.xib */; };
 		7ACDAF9E2923477E00B67001 /* KusuString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACDAF9D2923477E00B67001 /* KusuString.swift */; };
+		7AF29AF12925117600E6CFB5 /* PlayfairDisplay-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7AF29AE52925117600E6CFB5 /* PlayfairDisplay-Black.ttf */; };
+		7AF29AF22925117600E6CFB5 /* PlayfairDisplay-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7AF29AE62925117600E6CFB5 /* PlayfairDisplay-Medium.ttf */; };
+		7AF29AF32925117600E6CFB5 /* PlayfairDisplay-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7AF29AE72925117600E6CFB5 /* PlayfairDisplay-SemiBoldItalic.ttf */; };
+		7AF29AF42925117600E6CFB5 /* PlayfairDisplay-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7AF29AE82925117600E6CFB5 /* PlayfairDisplay-ExtraBold.ttf */; };
+		7AF29AF52925117600E6CFB5 /* PlayfairDisplay-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7AF29AE92925117600E6CFB5 /* PlayfairDisplay-ExtraBoldItalic.ttf */; };
+		7AF29AF62925117600E6CFB5 /* PlayfairDisplay-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7AF29AEA2925117600E6CFB5 /* PlayfairDisplay-BoldItalic.ttf */; };
+		7AF29AF72925117600E6CFB5 /* PlayfairDisplay-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7AF29AEB2925117600E6CFB5 /* PlayfairDisplay-MediumItalic.ttf */; };
+		7AF29AF82925117600E6CFB5 /* PlayfairDisplay-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7AF29AEC2925117600E6CFB5 /* PlayfairDisplay-Bold.ttf */; };
+		7AF29AF92925117600E6CFB5 /* PlayfairDisplay-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7AF29AED2925117600E6CFB5 /* PlayfairDisplay-BlackItalic.ttf */; };
+		7AF29AFA2925117600E6CFB5 /* PlayfairDisplay-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7AF29AEE2925117600E6CFB5 /* PlayfairDisplay-Italic.ttf */; };
+		7AF29AFB2925117600E6CFB5 /* PlayfairDisplay-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7AF29AEF2925117600E6CFB5 /* PlayfairDisplay-Regular.ttf */; };
+		7AF29AFC2925117600E6CFB5 /* PlayfairDisplay-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7AF29AF02925117600E6CFB5 /* PlayfairDisplay-SemiBold.ttf */; };
+		7AF29AFE292514D000E6CFB5 /* FontExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF29AFD292514D000E6CFB5 /* FontExtention.swift */; };
+		7AF29B052925190A00E6CFB5 /* AccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF29B032925190A00E6CFB5 /* AccountVC.swift */; };
+		7AF29B062925190A00E6CFB5 /* AccountVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AF29B042925190A00E6CFB5 /* AccountVC.xib */; };
+		7AF29B092925191D00E6CFB5 /* SearchHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF29B072925191D00E6CFB5 /* SearchHomeVC.swift */; };
+		7AF29B0A2925191D00E6CFB5 /* SearchHomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AF29B082925191D00E6CFB5 /* SearchHomeVC.xib */; };
+		7AF29B0D2925193000E6CFB5 /* CreatePostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF29B0B2925193000E6CFB5 /* CreatePostVC.swift */; };
+		7AF29B0E2925193000E6CFB5 /* CreatePostVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AF29B0C2925193000E6CFB5 /* CreatePostVC.xib */; };
+		7AF29B112925194300E6CFB5 /* NotificationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF29B0F2925194300E6CFB5 /* NotificationVC.swift */; };
+		7AF29B122925194300E6CFB5 /* NotificationVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AF29B102925194300E6CFB5 /* NotificationVC.xib */; };
+		8A0298460A39707B69B09A44 /* Pods_Kusu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3638FC557D1F5E54E5FEF6D8 /* Pods_Kusu.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		263DA20F133D18D156B6DBFC /* Pods-Kusu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kusu.debug.xcconfig"; path = "Target Support Files/Pods-Kusu/Pods-Kusu.debug.xcconfig"; sourceTree = "<group>"; };
+		3638FC557D1F5E54E5FEF6D8 /* Pods_Kusu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kusu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A061AB62923821900C6AAA6 /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 		7A061AB72923821900C6AAA6 /* Alamofire.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Alamofire.h; sourceTree = "<group>"; };
 		7A061AB82923821900C6AAA6 /* SessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
@@ -91,6 +115,28 @@
 		7ACDAF992923428600B67001 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		7ACDAF9A2923428600B67001 /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
 		7ACDAF9D2923477E00B67001 /* KusuString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KusuString.swift; sourceTree = "<group>"; };
+		7AF29AE52925117600E6CFB5 /* PlayfairDisplay-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-Black.ttf"; sourceTree = "<group>"; };
+		7AF29AE62925117600E6CFB5 /* PlayfairDisplay-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-Medium.ttf"; sourceTree = "<group>"; };
+		7AF29AE72925117600E6CFB5 /* PlayfairDisplay-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		7AF29AE82925117600E6CFB5 /* PlayfairDisplay-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-ExtraBold.ttf"; sourceTree = "<group>"; };
+		7AF29AE92925117600E6CFB5 /* PlayfairDisplay-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		7AF29AEA2925117600E6CFB5 /* PlayfairDisplay-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-BoldItalic.ttf"; sourceTree = "<group>"; };
+		7AF29AEB2925117600E6CFB5 /* PlayfairDisplay-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-MediumItalic.ttf"; sourceTree = "<group>"; };
+		7AF29AEC2925117600E6CFB5 /* PlayfairDisplay-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-Bold.ttf"; sourceTree = "<group>"; };
+		7AF29AED2925117600E6CFB5 /* PlayfairDisplay-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-BlackItalic.ttf"; sourceTree = "<group>"; };
+		7AF29AEE2925117600E6CFB5 /* PlayfairDisplay-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-Italic.ttf"; sourceTree = "<group>"; };
+		7AF29AEF2925117600E6CFB5 /* PlayfairDisplay-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-Regular.ttf"; sourceTree = "<group>"; };
+		7AF29AF02925117600E6CFB5 /* PlayfairDisplay-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-SemiBold.ttf"; sourceTree = "<group>"; };
+		7AF29AFD292514D000E6CFB5 /* FontExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontExtention.swift; sourceTree = "<group>"; };
+		7AF29B032925190A00E6CFB5 /* AccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountVC.swift; sourceTree = "<group>"; };
+		7AF29B042925190A00E6CFB5 /* AccountVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccountVC.xib; sourceTree = "<group>"; };
+		7AF29B072925191D00E6CFB5 /* SearchHomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHomeVC.swift; sourceTree = "<group>"; };
+		7AF29B082925191D00E6CFB5 /* SearchHomeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchHomeVC.xib; sourceTree = "<group>"; };
+		7AF29B0B2925193000E6CFB5 /* CreatePostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostVC.swift; sourceTree = "<group>"; };
+		7AF29B0C2925193000E6CFB5 /* CreatePostVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreatePostVC.xib; sourceTree = "<group>"; };
+		7AF29B0F2925194300E6CFB5 /* NotificationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationVC.swift; sourceTree = "<group>"; };
+		7AF29B102925194300E6CFB5 /* NotificationVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationVC.xib; sourceTree = "<group>"; };
+		B3DFB07C9FAE29A19E0B45BD /* Pods-Kusu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kusu.release.xcconfig"; path = "Target Support Files/Pods-Kusu/Pods-Kusu.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,12 +144,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A0298460A39707B69B09A44 /* Pods_Kusu.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3EB9953B85CD4BA880BD6364 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				263DA20F133D18D156B6DBFC /* Pods-Kusu.debug.xcconfig */,
+				B3DFB07C9FAE29A19E0B45BD /* Pods-Kusu.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6DBB414D19330450B0C57402 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3638FC557D1F5E54E5FEF6D8 /* Pods_Kusu.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7A061AA2292380C800C6AAA6 /* Source */ = {
 			isa = PBXGroup;
 			children = (
@@ -143,6 +207,8 @@
 			children = (
 				7A6D5F39291DF811006BF259 /* Kusu */,
 				7A6D5F38291DF811006BF259 /* Products */,
+				3EB9953B85CD4BA880BD6364 /* Pods */,
+				6DBB414D19330450B0C57402 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -157,6 +223,7 @@
 		7A6D5F39291DF811006BF259 /* Kusu */ = {
 			isa = PBXGroup;
 			children = (
+				7AF29AE42925114300E6CFB5 /* Font */,
 				7AC8641D2923685A007A9628 /* ExtendedLibrary */,
 				7A8C488D291F48B5005E57BD /* CustomView */,
 				7A8C4887291F4829005E57BD /* HomeFlow */,
@@ -181,6 +248,10 @@
 		7A8C4887291F4829005E57BD /* HomeFlow */ = {
 			isa = PBXGroup;
 			children = (
+				7AF29B02292518E400E6CFB5 /* ed */,
+				7AF29B01292518D900E6CFB5 /* Notification */,
+				7AF29B00292518CB00E6CFB5 /* CreatePost */,
+				7AF29AFF292518BF00E6CFB5 /* Search */,
 				7A8D2409291FC78000483B6C /* Account */,
 				7A8D2408291FC77700483B6C /* Home */,
 				7A8C4888291F4838005E57BD /* CustomTabbar */,
@@ -208,6 +279,7 @@
 				7AC8641B29236801007A9628 /* info.swift */,
 				7AC8642429236D0D007A9628 /* CustomeLoading.swift */,
 				7AC8642529236D0D007A9628 /* CustomeLoading.xib */,
+				7AF29AFD292514D000E6CFB5 /* FontExtention.swift */,
 			);
 			path = CustomView;
 			sourceTree = "<group>";
@@ -228,6 +300,8 @@
 		7A8D2409291FC78000483B6C /* Account */ = {
 			isa = PBXGroup;
 			children = (
+				7AF29B032925190A00E6CFB5 /* AccountVC.swift */,
+				7AF29B042925190A00E6CFB5 /* AccountVC.xib */,
 			);
 			path = Account;
 			sourceTree = "<group>";
@@ -240,6 +314,59 @@
 			path = ExtendedLibrary;
 			sourceTree = "<group>";
 		};
+		7AF29AE42925114300E6CFB5 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				7AF29AE52925117600E6CFB5 /* PlayfairDisplay-Black.ttf */,
+				7AF29AED2925117600E6CFB5 /* PlayfairDisplay-BlackItalic.ttf */,
+				7AF29AEC2925117600E6CFB5 /* PlayfairDisplay-Bold.ttf */,
+				7AF29AEA2925117600E6CFB5 /* PlayfairDisplay-BoldItalic.ttf */,
+				7AF29AE82925117600E6CFB5 /* PlayfairDisplay-ExtraBold.ttf */,
+				7AF29AE92925117600E6CFB5 /* PlayfairDisplay-ExtraBoldItalic.ttf */,
+				7AF29AEE2925117600E6CFB5 /* PlayfairDisplay-Italic.ttf */,
+				7AF29AE62925117600E6CFB5 /* PlayfairDisplay-Medium.ttf */,
+				7AF29AEB2925117600E6CFB5 /* PlayfairDisplay-MediumItalic.ttf */,
+				7AF29AEF2925117600E6CFB5 /* PlayfairDisplay-Regular.ttf */,
+				7AF29AF02925117600E6CFB5 /* PlayfairDisplay-SemiBold.ttf */,
+				7AF29AE72925117600E6CFB5 /* PlayfairDisplay-SemiBoldItalic.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		7AF29AFF292518BF00E6CFB5 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				7AF29B072925191D00E6CFB5 /* SearchHomeVC.swift */,
+				7AF29B082925191D00E6CFB5 /* SearchHomeVC.xib */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		7AF29B00292518CB00E6CFB5 /* CreatePost */ = {
+			isa = PBXGroup;
+			children = (
+				7AF29B0B2925193000E6CFB5 /* CreatePostVC.swift */,
+				7AF29B0C2925193000E6CFB5 /* CreatePostVC.xib */,
+			);
+			path = CreatePost;
+			sourceTree = "<group>";
+		};
+		7AF29B01292518D900E6CFB5 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				7AF29B0F2925194300E6CFB5 /* NotificationVC.swift */,
+				7AF29B102925194300E6CFB5 /* NotificationVC.xib */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
+		7AF29B02292518E400E6CFB5 /* ed */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ed;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -247,9 +374,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7A6D5F4B291DF812006BF259 /* Build configuration list for PBXNativeTarget "Kusu" */;
 			buildPhases = (
+				C9F63196D591A440960D733A /* [CP] Check Pods Manifest.lock */,
 				7A6D5F33291DF811006BF259 /* Sources */,
 				7A6D5F34291DF811006BF259 /* Frameworks */,
 				7A6D5F35291DF811006BF259 /* Resources */,
+				DFD1C5DAA0F0BD273FF1422A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -276,7 +405,7 @@
 				};
 			};
 			buildConfigurationList = 7A6D5F32291DF811006BF259 /* Build configuration list for PBXProject "Kusu" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -298,19 +427,77 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AF29AFB2925117600E6CFB5 /* PlayfairDisplay-Regular.ttf in Resources */,
+				7AF29AF82925117600E6CFB5 /* PlayfairDisplay-Bold.ttf in Resources */,
 				7A30CBA8292202B400F0B99D /* CustomTabBar.xib in Resources */,
 				7A6D5F47291DF812006BF259 /* LaunchScreen.storyboard in Resources */,
+				7AF29AF32925117600E6CFB5 /* PlayfairDisplay-SemiBoldItalic.ttf in Resources */,
 				7A6D5F44291DF812006BF259 /* Assets.xcassets in Resources */,
+				7AF29AF42925117600E6CFB5 /* PlayfairDisplay-ExtraBold.ttf in Resources */,
 				7A6D5F42291DF811006BF259 /* Main.storyboard in Resources */,
 				7ACDAF94292340B000B67001 /* StoryCollectionViewCell.xib in Resources */,
+				7AF29AF62925117600E6CFB5 /* PlayfairDisplay-BoldItalic.ttf in Resources */,
+				7AF29AF52925117600E6CFB5 /* PlayfairDisplay-ExtraBoldItalic.ttf in Resources */,
+				7AF29B122925194300E6CFB5 /* NotificationVC.xib in Resources */,
 				7AC8642729236D0D007A9628 /* CustomeLoading.xib in Resources */,
 				7A8D240D291FC7A100483B6C /* homeVC.xib in Resources */,
+				7AF29B0A2925191D00E6CFB5 /* SearchHomeVC.xib in Resources */,
+				7AF29AF12925117600E6CFB5 /* PlayfairDisplay-Black.ttf in Resources */,
+				7AF29B062925190A00E6CFB5 /* AccountVC.xib in Resources */,
+				7AF29AF92925117600E6CFB5 /* PlayfairDisplay-BlackItalic.ttf in Resources */,
+				7AF29AF72925117600E6CFB5 /* PlayfairDisplay-MediumItalic.ttf in Resources */,
 				7A8C488C291F487B005E57BD /* CustomTabbarVC.xib in Resources */,
+				7AF29AFC2925117600E6CFB5 /* PlayfairDisplay-SemiBold.ttf in Resources */,
+				7AF29B0E2925193000E6CFB5 /* CreatePostVC.xib in Resources */,
+				7AF29AFA2925117600E6CFB5 /* PlayfairDisplay-Italic.ttf in Resources */,
+				7AF29AF22925117600E6CFB5 /* PlayfairDisplay-Medium.ttf in Resources */,
 				7ACDAF9C2923428600B67001 /* PostTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C9F63196D591A440960D733A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Kusu-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DFD1C5DAA0F0BD273FF1422A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Kusu/Pods-Kusu-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Kusu/Pods-Kusu-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Kusu/Pods-Kusu-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7A6D5F33291DF811006BF259 /* Sources */ = {
@@ -320,8 +507,10 @@
 				7A061AD12923821900C6AAA6 /* Alamofire.swift in Sources */,
 				7AC8642629236D0D007A9628 /* CustomeLoading.swift in Sources */,
 				7A061ACD2923821900C6AAA6 /* Notifications.swift in Sources */,
+				7AF29AFE292514D000E6CFB5 /* FontExtention.swift in Sources */,
 				7ACDAF93292340B000B67001 /* StoryCollectionViewCell.swift in Sources */,
 				7A8D2407291FC6D900483B6C /* CommonClass.swift in Sources */,
+				7AF29B112925194300E6CFB5 /* NotificationVC.swift in Sources */,
 				7A061AD42923821900C6AAA6 /* ServerTrustPolicy.swift in Sources */,
 				7A061ACA2923821900C6AAA6 /* ResponseSerialization.swift in Sources */,
 				7A061AD32923821900C6AAA6 /* Result.swift in Sources */,
@@ -332,6 +521,8 @@
 				7A061ACE2923821900C6AAA6 /* Timeline.swift in Sources */,
 				7A061AC82923821900C6AAA6 /* Response.swift in Sources */,
 				7A8C488F291F4923005E57BD /* KusuView.swift in Sources */,
+				7AF29B0D2925193000E6CFB5 /* CreatePostVC.swift in Sources */,
+				7AF29B052925190A00E6CFB5 /* AccountVC.swift in Sources */,
 				7A061AD62923821900C6AAA6 /* ParameterEncoding.swift in Sources */,
 				7A061AC92923821900C6AAA6 /* SessionManager.swift in Sources */,
 				7A061AD52923821900C6AAA6 /* MultipartFormData.swift in Sources */,
@@ -340,6 +531,7 @@
 				7A061ACF2923821900C6AAA6 /* Validation.swift in Sources */,
 				7A061AD22923821900C6AAA6 /* SessionDelegate.swift in Sources */,
 				7A6D5F3B291DF811006BF259 /* AppDelegate.swift in Sources */,
+				7AF29B092925191D00E6CFB5 /* SearchHomeVC.swift in Sources */,
 				7A061AD02923821900C6AAA6 /* Request.swift in Sources */,
 				7A061ACC2923821900C6AAA6 /* DispatchQueue+Alamofire.swift in Sources */,
 				7A8C488B291F487B005E57BD /* CustomTabbarVC.swift in Sources */,
@@ -488,6 +680,7 @@
 		};
 		7A6D5F4C291DF812006BF259 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 263DA20F133D18D156B6DBFC /* Pods-Kusu.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -515,6 +708,7 @@
 		};
 		7A6D5F4D291DF812006BF259 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3DFB07C9FAE29A19E0B45BD /* Pods-Kusu.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
