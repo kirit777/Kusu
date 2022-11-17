@@ -81,17 +81,27 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9Ap-mQ-aq4">
+                                <rect key="frame" x="0.0" y="49.666666666666664" width="460" height="0.3333333333333357"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="0.5" id="ld2-rG-Rbt"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="vBw-lc-glq" firstAttribute="leading" secondItem="ShS-0h-VXW" secondAttribute="trailing" constant="10" id="Fy8-ex-PQV"/>
+                            <constraint firstItem="9Ap-mQ-aq4" firstAttribute="leading" secondItem="aPC-KY-Tsg" secondAttribute="leading" id="PXN-Y9-mRD"/>
                             <constraint firstItem="2Gx-P0-vdo" firstAttribute="centerY" secondItem="aPC-KY-Tsg" secondAttribute="centerY" id="XaC-RY-V6Z"/>
                             <constraint firstItem="2Gx-P0-vdo" firstAttribute="leading" secondItem="aPC-KY-Tsg" secondAttribute="leading" constant="10" id="f73-N0-FuA"/>
                             <constraint firstAttribute="trailing" secondItem="vBw-lc-glq" secondAttribute="trailing" constant="10" id="g0J-8o-Pt2"/>
                             <constraint firstItem="ShS-0h-VXW" firstAttribute="centerY" secondItem="aPC-KY-Tsg" secondAttribute="centerY" id="hHa-5t-ZKm"/>
                             <constraint firstItem="ShS-0h-VXW" firstAttribute="leading" secondItem="2Gx-P0-vdo" secondAttribute="trailing" constant="10" id="j9D-y9-L5y"/>
+                            <constraint firstAttribute="bottom" secondItem="9Ap-mQ-aq4" secondAttribute="bottom" id="lLV-pf-sau"/>
                             <constraint firstAttribute="height" constant="50" id="lmy-tT-ueC"/>
                             <constraint firstItem="vBw-lc-glq" firstAttribute="centerY" secondItem="aPC-KY-Tsg" secondAttribute="centerY" id="rOx-j8-AVX"/>
+                            <constraint firstAttribute="trailing" secondItem="9Ap-mQ-aq4" secondAttribute="trailing" id="ycO-dc-lVe"/>
                         </constraints>
                     </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c9s-a9-otL">

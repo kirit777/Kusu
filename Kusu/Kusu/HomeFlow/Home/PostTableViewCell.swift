@@ -40,7 +40,7 @@ class PostTableViewCell: UITableViewCell {
         }
         
         if let strImage = dict["photo"] as? String{
-            self.imgUserImage.setImage(strUrl: strImage, strDefault: "", cornerRadius: 0)
+            self.imgUserImage.setImage(strUrl: strImage, strDefault: "DefaultUser", cornerRadius: 0)
         }
     }
     

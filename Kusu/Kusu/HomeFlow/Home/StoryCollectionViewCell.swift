@@ -18,7 +18,7 @@ class StoryCollectionViewCell: UICollectionViewCell {
 
     func setCellData(dict:NSMutableDictionary){
         if let strImage = dict["att_thumb"] as? String{
-            self.imgStory.setImage(strUrl: strImage, strDefault: "", cornerRadius: 0)
+            self.imgStory.setImage(strUrl: strImage, strDefault: "DefaultUser", cornerRadius: 0)
         }
         
         
