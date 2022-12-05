@@ -68,7 +68,7 @@ func GetHeaderWithAuthor() -> NSDictionary {
     let dict = NSMutableDictionary()
    
     dict["state"] = ""
-    dict["token"] = "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2Njg0MjYzMTEsImlzcyI6ImxvY2FsaG9zdCIsImV4cCI6MTY5OTk2MjMxMSwidXNlcl9pZCI6IjE0In0.8Nib4mAwD5WrQn23B0HM6en2pBsXTT0l6TAjzq4WSfA"
+    dict["token"] = "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2Njg4MzIzMTQsImlzcyI6ImxvY2FsaG9zdCIsImV4cCI6MTcwMDM2ODMxNCwidXNlcl9pZCI6IjE0In0.AhmZsRLj91Pkx6d5bNK05mInwdYkVVIueTmzTTHamos"
     
     
     
@@ -179,3 +179,60 @@ extension UIImage {
 
 
 
+extension UIView {
+    func setShadowWithColor(_ color:UIColor,opacity:Float){
+        
+        self.layer.shadowColor = color.cgColor
+        self.layer.shadowOpacity = opacity
+        self.layer.shadowOffset = CGSize.zero
+        self.layer.shadowRadius = 2
+    }
+    
+    func addShadow(offset: CGSize, color: UIColor, radius: CGFloat, opacity: Float) {
+        layer.masksToBounds = false
+        layer.shadowOffset = offset
+        layer.shadowColor = color.cgColor
+        layer.shadowRadius = radius
+        layer.shadowOpacity = opacity
+        let backgroundCGColor = backgroundColor?.cgColor
+        backgroundColor = nil
+        layer.backgroundColor =  backgroundCGColor
+    }
+    
+    func addShadow(shadowColor: UIColor, offSet: CGSize, opacity: Float, shadowRadius: CGFloat, cornerRadius: CGFloat, corners: UIRectCorner, fillColor: UIColor = .white) {
+            
+            let shadowLayer = CAShapeLayer()
+            let size = CGSize(width: cornerRadius, height: cornerRadius)
+            let cgPath = UIBezierPath(roundedRect: self.bounds, byRoundingCorners: corners, cornerRadii: size).cgPath //1
+            shadowLayer.path = cgPath //2
+            shadowLayer.fillColor = fillColor.cgColor //3
+            shadowLayer.shadowColor = shadowColor.cgColor //4
+            shadowLayer.shadowPath = cgPath
+            shadowLayer.shadowOffset = offSet //5
+            shadowLayer.shadowOpacity = opacity
+            shadowLayer.shadowRadius = shadowRadius
+            self.layer.addSublayer(shadowLayer)
+        }
+    
+    func setShadowWithCornerRadius(cornerRadius: CGFloat, color:UIColor) {
+        self.layer.masksToBounds = false
+        self.layer.cornerRadius = cornerRadius
+        self.layer.shadowColor = color.cgColor
+        self.layer.shadowPath = UIBezierPath(roundedRect: self.bounds, cornerRadius: cornerRadius).cgPath
+        self.layer.shadowOffset = CGSize(width: 1.0, height: 1.0)
+        self.layer.shadowOpacity = 5.0
+        self.layer.shadowRadius = 5.0
+    }
+    
+    func dropShadow(color: UIColor, opacity: Float = 0.5, offSet: CGSize, shadowRadius: CGFloat = 1, scale: Bool = true, cornerRadius: CGFloat, rect:CGRect) {
+        let shadowLayer = CAShapeLayer()
+        shadowLayer.path = UIBezierPath(roundedRect: rect, cornerRadius: cornerRadius).cgPath
+        shadowLayer.fillColor = UIColor.white.cgColor
+        shadowLayer.shadowColor = color.cgColor
+        shadowLayer.shadowPath = shadowLayer.path
+        shadowLayer.shadowOffset = offSet
+        shadowLayer.shadowOpacity = opacity
+        shadowLayer.shadowRadius = shadowRadius
+        layer.insertSublayer(shadowLayer, at: 0)
+    }
+}

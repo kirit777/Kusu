@@ -28,7 +28,8 @@ class PostTableViewCell: UITableViewCell {
     func setCellData(dict:NSMutableDictionary){
         
         if let strImage = dict["att_thumb"] as? String{
-            self.imgPost.setImage(strUrl: strImage, strDefault: "", cornerRadius: 0)
+            self.imgPost.setImage(strUrl: "https://drive.google.com/file/d/1VcU3FeXfGl6E_MicePaRLjgEKE6b4lSr/view", strDefault: "", cornerRadius: 0)
+            
         }
         
         if let strDesc = dict["description"] as? String{
@@ -45,3 +46,4 @@ class PostTableViewCell: UITableViewCell {
     }
     
 }
+

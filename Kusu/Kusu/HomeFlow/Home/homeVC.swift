@@ -26,7 +26,7 @@ class homeVC: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
+        setNavbar()
         arrList = NSMutableArray()
        // cvPosts.register(UINib(nibName: "CollectionViewLoading", bundle: nil), forSupplementaryViewOfKind: UICollectionView.elementKindSectionFooter, withReuseIdentifier: "CollectionViewLoading")
         self.cvPosts.delegate = self
@@ -41,10 +41,42 @@ class homeVC: UIViewController {
         refreshControl.addTarget(self, action: #selector(refreshData), for: .valueChanged)
         self.refreshData()
         
+       
+        cvStory.addShadow(offset: CGSize(width: 1, height: 1), color: UIColor.black.withAlphaComponent(0.5), radius: 3, opacity: 0.4)
+        
     }
 
     @objc func refreshData() {
         self.setUserSearchView()
+    }
+    
+    
+    func setNavbar(){
+        //userBtn
+        let muteView = UIView()
+        muteView.frame = CGRect(x: 0, y: 0, width: 40, height: 40)
+        
+        let imgLogo = UIImageView()
+        imgLogo.frame = CGRect(x: ((muteView.bounds.width - 22) / 2), y: ((muteView.bounds.height - 22) / 2), width: 22, height: 22)
+        imgLogo.image = UIImage(named: "iconAppIcon")
+        
+        muteView.addSubview(imgLogo)
+        
+        let leftMuteBtn = UIBarButtonItem(customView: muteView)
+        
+        
+        self.navigationItem.leftBarButtonItems = [leftMuteBtn]
+    }
+    
+    @objc func OnClickLogo(){
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        navigationController?.navigationBar.barTintColor = UIColor.white
+        tabBarController?.tabBar.barTintColor = UIColor.white
     }
     
     func setUserSearchView() {
@@ -206,8 +238,8 @@ extension homeVC : UICollectionViewDelegate , UICollectionViewDataSource , UICol
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
-        let size = 100
-        let cellSize = CGSize(width: size, height: size)
+        let size = 70
+        let cellSize = CGSize(width: size, height: 80)
         return cellSize
         
     }

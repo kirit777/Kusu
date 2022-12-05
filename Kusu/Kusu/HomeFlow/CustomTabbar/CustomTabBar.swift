@@ -34,7 +34,7 @@ class CustomTabBar: UIView {
 
 
 
-    var customTabDelegate:CustomTabBarDelegate? = nil
+   // var customTabDelegate:CustomTabBarDelegate? = nil
 
 
 

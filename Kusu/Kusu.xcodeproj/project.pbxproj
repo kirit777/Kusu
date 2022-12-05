@@ -26,6 +26,7 @@
 		7A061AD82923821900C6AAA6 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A061AC72923821900C6AAA6 /* NetworkReachabilityManager.swift */; };
 		7A30CBA8292202B400F0B99D /* CustomTabBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A30CBA6292202B400F0B99D /* CustomTabBar.xib */; };
 		7A30CBAA2922153D00F0B99D /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A30CBA92922153D00F0B99D /* CustomTabBar.swift */; };
+		7A6276CA293A28B400270C03 /* ImageExe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6276C9293A28B400270C03 /* ImageExe.swift */; };
 		7A6D5F3B291DF811006BF259 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6D5F3A291DF811006BF259 /* AppDelegate.swift */; };
 		7A6D5F3F291DF811006BF259 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6D5F3E291DF811006BF259 /* ViewController.swift */; };
 		7A6D5F42291DF811006BF259 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A6D5F40291DF811006BF259 /* Main.storyboard */; };
@@ -93,6 +94,7 @@
 		7A061AC72923821900C6AAA6 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkReachabilityManager.swift; sourceTree = "<group>"; };
 		7A30CBA6292202B400F0B99D /* CustomTabBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTabBar.xib; sourceTree = "<group>"; };
 		7A30CBA92922153D00F0B99D /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
+		7A6276C9293A28B400270C03 /* ImageExe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageExe.swift; sourceTree = "<group>"; };
 		7A6D5F37291DF811006BF259 /* Kusu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kusu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A6D5F3A291DF811006BF259 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7A6D5F3E291DF811006BF259 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -255,6 +257,7 @@
 				7A8D2409291FC78000483B6C /* Account */,
 				7A8D2408291FC77700483B6C /* Home */,
 				7A8C4888291F4838005E57BD /* CustomTabbar */,
+				7A6276C9293A28B400270C03 /* ImageExe.swift */,
 			);
 			path = HomeFlow;
 			sourceTree = "<group>";
@@ -522,6 +525,7 @@
 				7A061AC82923821900C6AAA6 /* Response.swift in Sources */,
 				7A8C488F291F4923005E57BD /* KusuView.swift in Sources */,
 				7AF29B0D2925193000E6CFB5 /* CreatePostVC.swift in Sources */,
+				7A6276CA293A28B400270C03 /* ImageExe.swift in Sources */,
 				7AF29B052925190A00E6CFB5 /* AccountVC.swift in Sources */,
 				7A061AD62923821900C6AAA6 /* ParameterEncoding.swift in Sources */,
 				7A061AC92923821900C6AAA6 /* SessionManager.swift in Sources */,

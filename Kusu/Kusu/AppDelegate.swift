@@ -59,7 +59,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CAAnimationDelegate,Custo
         
         
         tabBarController = CustomTabbarVC()
-       // customTabBar = CustomTabBar.instanceFromNib() as? CustomTabBar
+      //  customTabBar = CustomTabBar.instanceFromNib() as? CustomTabBar
         let myviewControllers = [navHome , navSearch , navCreatePost , navNotification , navAccount] as? [UINavigationController]
         tabBarController?.setViewControllers(myviewControllers, animated: true)
         setSelectedTabIndex(index: 0)

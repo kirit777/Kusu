@@ -134,26 +134,26 @@
                                 <buttonConfiguration key="configuration" style="plain" image="iconSave"/>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="J3Q-2i-FUV">
-                                <rect key="frame" x="10" y="0.0" width="150" height="53"/>
+                                <rect key="frame" x="10" y="0.0" width="100" height="53"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5c1-41-3PZ">
-                                        <rect key="frame" x="0.0" y="0.0" width="50" height="53"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="33.333333333333336" height="53"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="iconHeart"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0gW-8d-sij">
-                                        <rect key="frame" x="50" y="0.0" width="50" height="53"/>
+                                        <rect key="frame" x="33.333333333333329" y="0.0" width="33.333333333333329" height="53"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="iconComment"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0cd-yP-umo">
-                                        <rect key="frame" x="100" y="0.0" width="50" height="53"/>
+                                        <rect key="frame" x="66.666666666666671" y="0.0" width="33.333333333333329" height="53"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="iconShare"/>
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="QXh-v7-mEH"/>
+                                    <constraint firstAttribute="width" constant="100" id="QXh-v7-mEH"/>
                                 </constraints>
                             </stackView>
                         </subviews>
@@ -215,11 +215,11 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="iconComment" width="84" height="84"/>
+        <image name="iconComment" width="60" height="60"/>
         <image name="iconHeart" width="60" height="60"/>
-        <image name="iconMore" width="77" height="20"/>
-        <image name="iconSave" width="77" height="119"/>
-        <image name="iconShare" width="117" height="123"/>
+        <image name="iconMore" width="60" height="60"/>
+        <image name="iconSave" width="60" height="60"/>
+        <image name="iconShare" width="60" height="60"/>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
